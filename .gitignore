@@ -1,6 +1,10 @@
 # Local .terraform directories
 **/.terraform/*
 
+#blocking local files unnecessary in git
+demo.tfvars 
+Worklog
+
 # .tfstate files
 *.tfstate
 *.tfstate.*
