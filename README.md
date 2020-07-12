@@ -4,7 +4,7 @@ Code samples for the Operating Systems Training Session. Note - this is purely d
 
 # main.tf
 
-Simplistic infrastructure to replicate the demo - an Ubuntu box, a Windows box and a VPC. Note that you will need to configure credentials and update the local IP in the security group... I leave that as an exercise to the reader.
+Simplistic infrastructure to replicate the demo - an Ubuntu box, a Windows box and a VPC. Note that you will need to configure credentials (AWS and PEM file) and update the local IP in the security group... I leave that as an exercise to the reader.
 
 # linux.sh
 

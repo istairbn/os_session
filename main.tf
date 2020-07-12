@@ -61,6 +61,7 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "linux" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = "t2.micro"
+  #This is the PEM File name... if you don't have a key with this name, it ain't gonna work!
   key_name = "os_session"
   subnet_id = aws_subnet.sn.id
   associate_public_ip_address = true
@@ -77,6 +78,7 @@ resource "aws_instance" "linux" {
 resource "aws_instance" "windows" {
   ami           = "ami-08b8bf0a2fb1864a2"
   instance_type = "t2.medium"
+  #This is the PEM File name... if you don't have a key with this name, it ain't gonna work!
   key_name = "os_session"
   subnet_id = aws_subnet.sn.id
   associate_public_ip_address = true
